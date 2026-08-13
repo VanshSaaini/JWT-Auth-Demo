@@ -1,0 +1,352 @@
+:root {
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  color: #172033;
+  background: #f4f7fb;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+.auth-layout {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background:
+    radial-gradient(circle at top left, #dfeaff 0, transparent 34%),
+    #f4f7fb;
+}
+
+.auth-card {
+  width: min(440px, 100%);
+  padding: 34px;
+  background: white;
+  border: 1px solid #e3e8f0;
+  border-radius: 20px;
+  box-shadow: 0 18px 60px rgba(30, 50, 80, 0.1);
+}
+
+.brand,
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand-mark {
+  display: grid;
+  place-items: center;
+  width: 46px;
+  height: 46px;
+  border-radius: 12px;
+  background: #172033;
+  color: white;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+.brand h1 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.brand p {
+  margin: 3px 0 0;
+  color: #728096;
+  font-size: 13px;
+}
+
+.auth-heading {
+  margin: 36px 0 24px;
+}
+
+.auth-heading h2 {
+  margin: 0 0 8px;
+  font-size: 28px;
+}
+
+.auth-heading p {
+  margin: 0;
+  color: #6d798d;
+}
+
+form {
+  display: grid;
+  gap: 18px;
+}
+
+label {
+  display: grid;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 650;
+}
+
+input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #d7dee9;
+  border-radius: 10px;
+  outline: none;
+  background: white;
+  color: #172033;
+}
+
+input:focus {
+  border-color: #536dfe;
+  box-shadow: 0 0 0 3px rgba(83, 109, 254, 0.12);
+}
+
+.primary-button,
+.logout-button,
+.nav-button {
+  border: 0;
+  border-radius: 10px;
+  padding: 11px 16px;
+  font-weight: 700;
+}
+
+.primary-button {
+  margin-top: 4px;
+  background: #172033;
+  color: white;
+}
+
+.primary-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.auth-switch {
+  margin-top: 22px;
+  text-align: center;
+  color: #728096;
+  font-size: 14px;
+}
+
+.link-button {
+  margin-left: 5px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: #4257d6;
+  font-weight: 700;
+}
+
+.alert {
+  margin-bottom: 18px;
+  padding: 11px 13px;
+  border-radius: 9px;
+  font-size: 14px;
+}
+
+.alert.error {
+  background: #fff0f0;
+  border: 1px solid #ffd4d4;
+  color: #b42318;
+}
+
+.alert.success {
+  background: #effcf5;
+  border: 1px solid #c9f1dc;
+  color: #087443;
+}
+
+.app-layout {
+  min-height: 100vh;
+  background: #f4f7fb;
+}
+
+.navbar {
+  min-height: 72px;
+  padding: 0 6%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  background: white;
+  border-bottom: 1px solid #e3e8f0;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.nav-button {
+  background: transparent;
+  color: #68758a;
+}
+
+.nav-button.active {
+  background: #edf0ff;
+  color: #4257d6;
+}
+
+.logout-button {
+  margin-left: 8px;
+  background: #172033;
+  color: white;
+}
+
+.content {
+  padding: 48px 6%;
+}
+
+.dashboard-container {
+  width: min(1080px, 100%);
+  margin: 0 auto;
+}
+
+.hero-card {
+  padding: 32px;
+  border-radius: 20px;
+  background: #172033;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+
+.hero-card h2 {
+  margin: 4px 0 8px;
+  font-size: 30px;
+}
+
+.hero-card p {
+  margin: 0;
+  color: #c8d0dd;
+}
+
+.eyebrow {
+  color: #aebcff !important;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 12px !important;
+  font-weight: 800;
+}
+
+.role-badge {
+  flex: 0 0 auto;
+  padding: 9px 13px;
+  border-radius: 999px;
+  background: #edf0ff;
+  color: #4257d6;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.role-badge.admin {
+  background: #fff1d8;
+  color: #9a5a00;
+}
+
+.grid {
+  margin-top: 22px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+}
+
+.panel {
+  padding: 26px;
+  background: white;
+  border: 1px solid #e3e8f0;
+  border-radius: 18px;
+  box-shadow: 0 8px 30px rgba(30, 50, 80, 0.05);
+}
+
+.panel h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.panel p {
+  color: #68758a;
+  line-height: 1.65;
+}
+
+.profile-data {
+  display: grid;
+  gap: 14px;
+}
+
+.profile-data div {
+  display: grid;
+  gap: 4px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #edf0f5;
+}
+
+.profile-data span {
+  color: #8792a3;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.profile-data strong {
+  color: #172033;
+}
+
+pre {
+  padding: 16px;
+  border-radius: 10px;
+  background: #101828;
+  color: #d1d9e6;
+  overflow-x: auto;
+}
+
+code {
+  font-family: Consolas, "Courier New", monospace;
+}
+
+@media (max-width: 720px) {
+  .navbar {
+    padding: 16px 5%;
+    align-items: flex-start;
+  }
+
+  .nav-actions {
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  .content {
+    padding: 28px 5%;
+  }
+
+  .hero-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .auth-card {
+    padding: 26px;
+  }
+}
